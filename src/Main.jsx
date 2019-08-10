@@ -1,4 +1,10 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab);
 
 export default class Main extends React.Component {
   state = {
@@ -61,7 +67,7 @@ export default class Main extends React.Component {
         <div className="container p-4">
           <div className="row">
             <div className="col" />
-            <div className="col-lg-4">
+            <div className="col-lg-6">
               <div className="card p-5">
                 <div className="row justify-content-center">
                   <h1>
@@ -102,6 +108,30 @@ export default class Main extends React.Component {
                 </div>
                 <div className="row justify-content-center pt-1 text-center">
                   <h2>{this.state.height} metres</h2>
+                </div>
+              </div>
+
+              <div className="card p-3 mt-3">
+                <div className="row justify-content-center ">
+                  <a
+                    className="font-weight-bold text-dark"
+                    href="https://bradleywindybank.herokuapp.com/"
+                  >
+                    <FontAwesomeIcon icon={faLink} />{" "}
+                    <u>Made by Bradley Windybank</u>
+                  </a>
+                </div>
+              </div>
+
+              <div className="card p-3 mt-2">
+                <div className="row justify-content-center">
+                  <a
+                    className="font-weight-bold text-dark"
+                    href="https://bradleywindybank.herokuapp.com/"
+                  >
+                    <FontAwesomeIcon icon={["fab", "github"]} />{" "}
+                    <u>View on GitHub</u>
+                  </a>
                 </div>
               </div>
             </div>
