@@ -100,7 +100,7 @@ export default class Main extends React.Component {
                 <div className="row justify-content-center ">
                   <h2 className="font-weight-bold">Height:</h2>
                 </div>
-                <div className="row justify-content-center pt-1">
+                <div className="row justify-content-center pt-1 text-center">
                   <h2>{this.state.height} metres</h2>
                 </div>
               </div>
