@@ -127,7 +127,7 @@ export default class Main extends React.Component {
                 <div className="row justify-content-center">
                   <a
                     className="font-weight-bold text-dark"
-                    href="https://bradleywindybank.herokuapp.com/"
+                    href="https://github.com/bradwindy/drop-calculator"
                   >
                     <FontAwesomeIcon icon={["fab", "github"]} />{" "}
                     <u>View on GitHub</u>
